@@ -1,0 +1,16 @@
+<button (click)="goHall()">Voltar para o hall</button>
+<form class="form" [formGroup]="loginForm">
+    <div class="d-flex justify-content-center"><h1>Formulario de login</h1></div>
+    <mat-form-field class="form-control">
+        <mat-label>Seu email</mat-label>
+        <input matInput type="text" formControlName="email">
+    </mat-form-field>
+    <mat-form-field class="form-control">
+        <mat-label>Sua senha</mat-label>
+        <input matInput type="password" formControlName="password">
+    </mat-form-field>
+    <div class="d-flex justify-content-between">
+    <button mat-button class="btn btn-primary" (click)="onLogin()">Login</button>
+    <a routerLink="/registro">Criar usuario</a>
+    </div>
+</form>

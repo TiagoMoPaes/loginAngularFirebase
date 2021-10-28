@@ -1,0 +1,15 @@
+<form class="form" [formGroup]="registroForm">
+    <div class="d-flex justify-content-center"><h1>Formulario de cadastro</h1></div>
+    <mat-form-field class="form-control">
+        <mat-label>Seu email</mat-label>
+        <input matInput type="text" formControlName="email">
+    </mat-form-field>
+    <mat-form-field class="form-control">
+        <mat-label>Sua senha</mat-label>
+        <input matInput type="password" formControlName="password">
+    </mat-form-field>
+    <div class="d-flex justify-content-between">
+    <button mat-button class="btn btn-success" (click)="createUser()">Registrar-se</button>
+    <a routerLink="/login">Ir para o login</a>
+    </div>
+</form>
